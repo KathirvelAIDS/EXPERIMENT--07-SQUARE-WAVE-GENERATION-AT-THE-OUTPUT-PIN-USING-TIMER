@@ -347,11 +347,12 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 
-## Output screen shots of proteus  :
- 
- 
- 
- ![image](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/01819fb5-3a27-41e0-a971-92d0287736b5)
+## Output screen shots of proteus :
+
+
+
+![322910903-bef6847b-fffe-4835-bac5-41fe4d58f01a](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/83993c7b-2679-490a-9553-6faf7165c8d8)
+
 
  
  
@@ -360,39 +361,96 @@ void assert_failed(uint8_t *file, uint32_t line)
  
  
  
- ![image](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/a022b5cf-3473-4e6e-b0b0-cddbb23a62f4)
-
- 
-
-## DUTY CYCLE AND FREQUENCY CALCULATION :
+![322910686-4299a3af-ae4e-463c-a47e-af143dfffc04](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/bf082f5d-de03-48ed-a259-c0d9905ad3d7)
 
 
 
-FOR PULSE AT 500
+Screen shots of Digital Oscilloscope:
 
 
 
-![image](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/d8d0d731-4c00-4577-8213-a833bc96c3a4)
+FOR PULSE AT 2500:
+
+
+
+![322911738-ff8952d5-d73e-4440-885c-3cb216486022](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/54f77bcf-8176-417c-9282-5aad02076d53)
 
 
 
 
-TON = 2 TOFF=2 TOTAL TIME = 4 FREQUENCY = 1/(TOTAL TIME) FREQUENCY = 250Hz
-
-FOR PULSE AT 700
 
 
+PULSE AT 5000 :
 
-![image](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/8d8fc057-8f09-4e33-8c6e-8b289c471e07)
+
+![322911906-87be1535-bb79-477a-b6b8-64952861afb0](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/13aee4f5-ebea-4ab3-9e7e-1fb1c7d94860)
 
 
-TON = 3 TOFF=1 TOTAL TIME = 4 FREQUENCY = 1/(TOTAL TIME)=250Hz
+PULSE AT 7500 :
 
-FOR PULSE AT 900
 
-![image](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/700514b3-69f2-46a0-b3de-cbf11f9395c9)
 
-TON = 3.5 TOFF=0.5 TOTAL TIME = 4 FREQUENCY = 1/(TOTAL TIME)=250HZ
+
+![322912113-54bd04cf-5636-4c45-a9f0-39f5f6b99c58](https://github.com/KathirvelAIDS/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/94911373/5f207da2-faa3-4c22-ba03-e226a906117c)
+
+
+
+
+DUTY CYCLE AND FREQUENCY CALCULATION
+
+
+FOR PULSE AT 2500:
+
+TON = 3*50 = 150 * 10^-6
+
+TOFF = 9*50 = 450 * 10^-6
+
+TOTAL TIME = 600
+
+FREQUENCY = 1/600 = 0.00166 = 1.6 KHZ
+
+
+Duty Cycle % = (150/600)*100 = 25%
+
+
+
+
+
+
+
+FOR PULSE AT 5000:
+
+
+TON = 6*50 = 300 * 10^-6
+
+TOFF= 6*50 = 300 * 10^-6
+
+TOTAL TIME = 600
+
+FREQUENCY = 1/600 = 0.00166 = 1.6 KHZ
+
+
+Duty Cycle % = (300/600)*100 = 50%
+
+
+
+
+
+
+
+
+FOR PULSE AT 7500:
+
+TON = 9*50 = 450 * 10^-6
+
+TOFF= 3*50 = 150 * 10^-6
+
+TOTAL TIME = 600
+
+FREQUENCY = 1/600 = 0.00166 = 1.6 KHZ
+
+Duty Cycle % = (450/600)*100 = 75%
+
 
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
